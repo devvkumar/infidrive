@@ -9,15 +9,15 @@ const FileUpload = ({ contract, account, provider }) => {
     if (file) {
       try {
         const formData = new FormData();
-        formData.append("file", file);
+        formData.append("file", file);git 
 
         const resFile = await axios({
           method: "post",
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `Enter Your Key`,
-            pinata_secret_api_key: `Enter Your Secret Key`,
+            pinata_api_key: `00e8b1f5bed47a4b9f47`,
+            pinata_secret_api_key: `9dc81d4345fbe32a5e8d400e3911a9fd911a1cf7c5abe7ca0509dd70a718b1d3`,
             "Content-Type": "multipart/form-data",
           },
         });
